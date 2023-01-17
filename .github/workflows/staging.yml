@@ -13,6 +13,6 @@ jobs:
       with:
           python-version: '3.8'
     - run: pip install django
-    - run: python manage.py runserver 0.0.0.0:8000
+    - run: python manage.py runserver
         
     
