@@ -9,12 +9,17 @@ jobs:
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@v3
+    - name: Setup python version
     - uses: actions/setup-python@v4
       with:
           python-version: '3.8'
+    # - name: Create and start virtual enviroment
+    #   run: |
+    #       python3 -m venv venv
+    #       source venv/bin/activate
     - run: pip install django
     - shell: bash
       run: pwd 
-    - run: python3 manage.py runserver
+    - run: python3 manage.py runserver &
         
     
