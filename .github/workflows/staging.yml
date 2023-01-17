@@ -13,6 +13,8 @@ jobs:
       with:
           python-version: '3.8'
     - run: pip install django
+    - shell: bash
+      run: pwd 
     - run: python manage.py runserver
         
     
