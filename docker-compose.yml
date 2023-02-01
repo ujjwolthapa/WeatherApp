@@ -1,7 +1,6 @@
 services:
   weatherapp:
-    build: .
-    image: weatherapp:latest
+    image: bromx/weatherapp:latest
     container_name: weatherapp
     ports: 
       - "8000:8000"
