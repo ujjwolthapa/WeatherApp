@@ -19,7 +19,7 @@ jobs:
     - run: sudo docker build -t $DOCKER_USER/weatherapp:latest .
     - run: sudo docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - run: sudo docker push $DOCKER_USER/weatherapp:latest
-    - run: docker compose up
+    - run: sudo docker compose up
     # - run: pip install django
     # - shell: bash
     #   run: pwd 
